@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Darryl The Coder</p>
+            <div class="rightmenu">
+                <p>Project</p>
+                <p>Contact</p>
+                <p>About Us</p>
+            </div>
+        </nav>
+        <!-- Section Jumbotron -->
+        <section id="jumbotron">
+            <div class="jumbotron">
+                <h1 onmouseover ="changeTitle(this)" onmouseout="changeTitleBack(this)" class="jumbotron-title">
+                    Dapatkan Tips Programming Disini!
+                </h1>
+                <div class="header-flex">
+                    <div>
+                        <h2 class="jumbotron-text">
+                            Baru di dunia Programming? <br> Belajar Lewat Pengembangan 
+                            <span style="color: #f4a261;"> Game dan Web </span> sederhana!
+                        </h2>
+                        <div class="mini-text-flex">
+                            <p class="mini-text"> Belajar programming dasar disini </p>
+                            <button id="icon-up" onclick="changeText()">
+                                <i class="far fa-hand-point-up"></i>
+                            </button>
+                            <button id="icon-down" class="icon-down">
+                                <i class="far fa-hand-point-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <img onmouseover="changeImage(this)" onmouseout="changeImageBack(this)" class="jumbotron-img" src="assets/img-header.jpg" alt="header" width="700" height="300">
+                    </div>
+                </div>
+            </div>
+            <!-- Section  Aside -->
+            <div class="main-content">
+                <div class="main-container">
+                    <aside>
+                        <div>
+                            <h3 class="aside-title">It's Darryl</h3>
+                            <img src="/assets/profile.webp" alt="Darryl" width="150px" height="auto">
+                            <div class="toggle">
+                                <button class="btn" id="green">
+                                    <i class="fa fa-thumbs-up fa-lg"></i>
+                                </button>
+                                <button class="btn" id="red">
+                                    <i class="fa fa-thumbs-down fa-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="search-tags-container">
+                            <div class="input-tag">
+                                <h3 class="aside-title">Search Here</h3>
+                                <input id="myInput" type="text" placeholder="Search...">
+                                <span class="addBtn" onclick="newElement()">Search</span>
+                            </div>
+
+                            <ul id="myUL" class="search-tags-list">
+                                <li class="search-tags-item">HTML</li>
+                                <li class="search-tags-item">Code</li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <!-- Section Maps -->
+                    <div class="content">
+                        <article id="video">
+                            <div class="item-video">
+                                <h3 class="article-title">What is Coding?</h3>
+                                <iframe width="500" height="350" src="https://www.youtube.com/embed/hb7Q33ysCwI?si=0EFKtyfSia9Y6TM2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                                
+                                <h3 class="article-title">How To Learn Coding</h3>
+                                <iframe width="500" height="350" src="https://www.youtube.com/embed/NtfbWkxJTHw?si=Rs69CHUIpwGxPnj-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </article>
+                        <article id="maps">
+                            <div class="maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.361921086748!2d106.72667257586808!3d-6.215910360884582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f799ade9fc03%3A0x2bfb2a05576d6cc9!2sPuri%20Meruya%20Town%20House!5e0!3m2!1sen!2sid!4v1696420200026!5m2!1sen!2sid" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- My Project -->
+                <article id="my-project">
+                    <h3 class="article-title"> My Project </h3>
+                        <div class="project-container">
+                            <div class="project">
+                                <img src="assets/Racing Game.png" alt="Racing" width="300px" height="210px">
+                                <h4 class="project-title">Racing Game</h4>
+                                <p class="project-description">Racing Game Dibuat Menggunakan Platfrom Virtual Studio Code</p>
+                            </div>
+
+                            <div class="project">
+                                <img src="assets/Web Project.png" alt="Web Project" width="300px" height="210px">
+                                <h4 class="project-title">Website E-Commerce</h4>
+                                <p class="project-description">Website E-Commerce Dibuat Untuk Menjual Barang Barang Terkini</p>
+                            </div>
+                        </div>
+                
+                </article>
+            </div>
+        
+
+        </section>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <div class="main-footer">
+            <h3 class="info-top">Darryl The Junior Programmer</h3>
+                <div class="social-media">
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-envelope"></i>
+                </div>
+                <p class="info-center">
+                    Copyright &copy; 2021, Darryl, All rights reserved
+                </p>
+        </div>
+    </footer>
+    <script>
+        function changeText(){
+            var replaceText = document.getElementsByClassName("mini-text");
+            replaceText[0].innerHTML = "Scroll Untuk Melihat"
+        
+            document.getElementById("icon-up").style.display = "none";
+            document.getElementById("icon-down").style.display = "block";
+        }
+
+        var btnLike = document.querySelector('#green')
+        var btnDislike = document.querySelector('#red')
+
+        btnLike.onclick = likeColor
+        btnDislike.onclick = dislikeColor
+
+        function likeColor(){
+            if (btnDislike.classList.contains('red')){
+                btnDislike.classList.remove('red')
+            }
+
+            this.classList.toggle('green')
+        }
+
+        function dislikeColor(){
+            if (btnLike.classList.contains('green')){
+                btnLike.classList.remove('green')
+            }
+
+            this.classList.toggle('red')
+        }
+
+        function changeImage(element){
+            element.setAttribute("src", "assets/img-header2.jpg")
+        }       
+        
+        function changeImageBack(element){
+            element.setAttribute("src", "assets/img-header.jpg")
+        }
+
+        function changeTitle(element){
+            element.innerHTML="Pengembangan Game dan Website"
+        }
+
+        function changeTitleBack(element){
+            element.innerHTML="Dapatkan Tips Programming Disini!"
+        }
+
+        var myList = document.getElementsByTagName("li");
+        var i;
+        for(i=0; i < myList.length; i++){
+            var span = document.createElement("span");
+            span.innerHTML = "x";
+            myList[i].appendChild(span).setAttribute("class", "close");
+        }
+
+        var close = document.getElementsByClassName("close");
+        var i;
+        for(i = 0; i < close.length; i++){
+            close[i].onclick = function(){
+                var div = this.parentElement;
+                div.style.display="none"
+            }
+        }
+
+        function newElement(){
+            var li = document.createElement("li");
+            var inputValue = document.getElementById("myInput").value;
+
+            if(inputValue === ''|| inputValue === ' '){
+                alert("Data tidak boleh kosong!");
+            } else {
+                document.getElementById("myUL").appendChild(li).setAttribute("class", "search-tags-item");
+                li.innerHTML=inputValue
+            }
+
+            document.getElementById("myInput").value ="";
+
+            var span = document.createElement("span");
+            span.innerHTML = "x";
+            li.appendChild(span).setAttribute("class", "close");
+
+            for(i = 0; i < close.length; i++) {
+                close[i].onclick = function(){
+                    var div = this.parentElement;
+                    div.style.display = "none"
+                }
+            }
+        }
+    </script>
+</body>
+</html>

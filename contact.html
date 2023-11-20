@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Darryl The Coder</p>
+            <div class="rightmenu">
+                <p>Project</p>
+                <p>Contact</p>
+                <p>About Us</p>
+            </div>
+        </nav>
+        </header>
+
+        <!-- Main -->
+        <div class="contact-container">
+            <div class="ilustration">
+                <img class="illustration-img" src="assets/undraw_Social_influencer_re_beim.png" alt="" width="800px">
+            </div>
+
+            <div class="contact">
+                <img class="profile-contact-img" src="assets/undraw_Male_avatar_g98d.png" alt="">
+                <h1>Contact Me</h1>
+                <p>Please feel free to contact me</p>
+                <h4>Your Information</h4>
+
+                <form action="contact.html" autocomplete="off">
+                    <div class="form-container">
+                        <!-- Kolom Input Name -->
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-input">
+                                <input class="input-item" type="text" name="name" id="name" placeholder=" ">
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                        </div>
+
+                        <!-- Kolom Input City -->
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="form-input">
+                                <input class="input-item" type="text" name="city" id="city" placeholder=" ">
+                                <label for="city" class="form-label">City</label>
+                            </div>
+                        </div>
+
+                        <!-- Kolom Input Email -->
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="far fa-envelope-open"></i>
+                            </div>
+                            <div class="form-input">
+                                <input class="input-item" type="text" name="email" id="email" placeholder=" ">
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+                        </div>
+
+                        <!-- Kolom Input Message -->
+                        <div class="textarea-container">
+                            <div class="icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="form-textarea">
+                                <textarea class="textarea" type="text" name="message" id="message" cols="52" rows="8"></textarea>
+                                <label for="message" class="form-label">Message</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="submit" class="submit">
+                </form>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="main-footer">
+                <h3 class="info-top">Darryl The Junior Programmer</h3>
+                    <div class="social-media">
+                        <i class="fab fa-instagram-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-envelope"></i>
+                    </div>
+                    <p class="info-center">
+                        Copyright &copy; 2021, Darryl, All rights reserved
+                    </p>
+            </div>
+        </footer>
+
+        <script>
+            function changeText(){
+                var replaceText = document.getElementsByClassName("mini-text");
+                replaceText[0].innerHTML = "Scroll Untuk Melihat"
+            
+                document.getElementById("icon-up").style.display = "none";
+                document.getElementById("icon-down").style.display = "block";
+            }
+    
+            var btnLike = document.querySelector('#green')
+            var btnDislike = document.querySelector('#red')
+    
+            btnLike.onclick = likeColor
+            btnDislike.onclick = dislikeColor
+    
+            function likeColor(){
+                if (btnDislike.classList.contains('red')){
+                    btnDislike.classList.remove('red')
+                }
+    
+                this.classList.toggle('green')
+            }
+    
+            function dislikeColor(){
+                if (btnLike.classList.contains('green')){
+                    btnLike.classList.remove('green')
+                }
+    
+                this.classList.toggle('red')
+            }
+    
+            function changeImage(element){
+                element.setAttribute("src", "assets/img-header2.jpg")
+            }       
+            
+            function changeImageBack(element){
+                element.setAttribute("src", "assets/img-header.jpg")
+            }
+    
+            function changeTitle(element){
+                element.innerHTML="Pengembangan Game dan Website"
+            }
+    
+            function changeTitleBack(element){
+                element.innerHTML="Dapatkan Tips Programming Disini!"
+            }
+    
+            var myList = document.getElementsByTagName("li");
+            var i;
+            for(i=0; i < myList.length; i++){
+                var span = document.createElement("span");
+                span.innerHTML = "x";
+                myList[i].appendChild(span).setAttribute("class", "close");
+            }
+    
+            var close = document.getElementsByClassName("close");
+            var i;
+            for(i = 0; i < close.length; i++){
+                close[i].onclick = function(){
+                    var div = this.parentElement;
+                    div.style.display="none"
+                }
+            }
+    
+            function newElement(){
+                var li = document.createElement("li");
+                var inputValue = document.getElementById("myInput").value;
+    
+                if(inputValue === ''|| inputValue === ' '){
+                    alert("Data tidak boleh kosong!");
+                } else {
+                    document.getElementById("myUL").appendChild(li).setAttribute("class", "search-tags-item");
+                    li.innerHTML=inputValue
+                }
+    
+                document.getElementById("myInput").value ="";
+    
+                var span = document.createElement("span");
+                span.innerHTML = "x";
+                li.appendChild(span).setAttribute("class", "close");
+    
+                for(i = 0; i < close.length; i++) {
+                    close[i].onclick = function(){
+                        var div = this.parentElement;
+                        div.style.display = "none"
+                    }
+                }
+            }
+        </script>
+</body>
+</html>
