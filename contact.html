@@ -12,13 +12,14 @@
         <nav>
             <p>Darryl The Coder</p>
             <div class="rightmenu">
-                <p>Project</p>
-                <p>Contact</p>
-                <p>About Us</p>
+              <p><a href="./project.html" class="rightmenu1">Project</a></p>
+              <p><a href="./contact.html" class="rightmenu1">Contact</a></p>
+              <p><a href="./about.html" class="rightmenu1">About Us</a></p>
             </div>
-        </nav>
-        </header>
-
+          </nav>
+    </header>
+     
+    <main>
         <!-- Main -->
         <div class="contact-container">
             <div class="ilustration">
@@ -31,7 +32,9 @@
                 <p>Please feel free to contact me</p>
                 <h4>Your Information</h4>
 
-                <form action="contact.html" autocomplete="off">
+                <form action="https://formsubmit.co/darryl.sitia88@gmail.com" autocomplete="off" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" class="next">
                     <div class="form-container">
                         <!-- Kolom Input Name -->
                         <div class="input-container">
@@ -82,6 +85,14 @@
                 </form>
             </div>
         </div>
+        <div class="modal-container">
+            <div class="modal">
+                <img src="assets/rocket.png" alt="">
+                <h3> Message Sent</h3>
+                <p> Thank You For Submitting !</p>
+            </div>
+        </div>
+    </main>
 
 
 
@@ -188,6 +199,18 @@
                         div.style.display = "none"
                     }
                 }
+            }
+
+            var btnSubmit = document.querySelector('.submit');
+            var modal = document.querySelector('.modal-container');
+
+            if(btnSubmit){
+                btnSubmit.addEventListener('click', function(){
+                    modal.classList.add('show');
+
+                    const next = document.querySelector('.next');
+                    next.setAttribute('.value','https://darryl-project-progammer.vercel.app/contact.html');
+                })
             }
         </script>
 </body>

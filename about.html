@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Darryl The Coder</p>
+            <div class="rightmenu">
+              <p><a href="./project.html" class="rightmenu1">Project</a></p>
+              <p><a href="./contact.html" class="rightmenu1">Contact</a></p>
+              <p><a href="./about.html" class="rightmenu1">About Us</a></p>
+            </div>
+          </nav>
+        
+          
+        <!-- Section Jumbotron -->
+        <section id="jumbotron">
+            <div class="jumbotron">
+                <h1 onmouseover ="changeTitle(this)" onmouseout="changeTitleBack(this)" class="jumbotron-title">
+                    Dapatkan Tips Programming Disini!
+                </h1>
+                <div class="header-flex">
+                    <div>
+                        <h2 class="jumbotron-text">
+                            Baru di dunia Programming? <br> Belajar Lewat Pengembangan 
+                            <span style="color: #f4a261;"> Game dan Web </span> sederhana!
+                        </h2>
+                        <div class="mini-text-flex">
+                            <p class="mini-text"> Belajar programming dasar disini </p>
+                            <button id="icon-up" onclick="changeText()">
+                                <i class="far fa-hand-point-up"></i>
+                            </button>
+                            <button id="icon-down" class="icon-down">
+                                <i class="far fa-hand-point-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <img onmouseover="changeImage(this)" onmouseout="changeImageBack(this)" class="jumbotron-img" src="assets/img-header.jpg" alt="header" width="700" height="300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SVG -->
+        <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#396678" fill-opacity="1" d="M0,224L80,197.3C160,171,320,117,480,128C640,139,800,213,960,234.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+        <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L80,197.3C160,171,320,117,480,128C640,139,800,213,960,234.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+
+      </section>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">My Introduction</p>
+                <div class="about-image">
+                    <img src="assets/format.png" alt="" class="blob-image">
+                    <img src="assets/PFP.png" alt="" class="blogger-image">
+                </div>
+                <div class="about-description">
+                    <p>
+                        I am Darryl Sitia, 17 years old student who lives in Jakarta. I started leardn coding when I was an highschool student.
+                        I was learning HTML and CSS and create a simple blog with Virtual Studio Code. I really like exploring HTML and love coding.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill">
+            <div class="section-container">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">My Technical Skill for 3 years Learn Coding</p>
+                <div class="skills-flex">
+                    <div class="skill-item">
+                        <img src="assets/scratch.png" alt="">
+                        <h4>Game Development with Scratch</h4>
+                        <p>1 year</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/phaser.png" alt="">
+                        <h4>Game Development with Phaser</h4>
+                        <p>2 year</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/html.png" alt="">
+                        <h4>Game Development with HTML</h4>
+                        <p>1 year</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activity">
+            <div class="section-container">
+                <h2 class="section-title">Activity</h2>
+                <p class="section-subtitle">My Activity</p>
+                <div class="activity-flex">
+                    <div class="activity-item">
+                        <img src="assets/activity1.jpg" alt="">
+                    </div>
+                    <div class="activity-item">
+                        <img src="assets/activity2.jpg" alt="">
+                    </div>
+                    <div class="activity-item">
+                        <img src="assets/activity3.jpg" alt="">
+                    </div>
+                    <div class="activity-item">
+                        <img src="assets/activity4.jpg" alt="">
+                    </div>
+                    <div class="activity-item">
+                        <img src="assets/activity5.jpg" alt="">
+                    </div>
+                    <div class="activity-item">
+                        <img src="assets/activity6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <h3 class="info-top">Darryl The Junior Programmer</h3>
+                <div class="social-media">
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-envelope"></i>
+                </div>
+                <p class="info-center">
+                    Copyright &copy; 2021, Darryl, All rights reserved
+                </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
