@@ -13,6 +13,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="splash">
+      <h1 class="splash-text" data-aos="fade-right" data-aos-duration="200">Hello Guys !</h1>
+      <img src="assets/astronaut1.png" alt="" class="astronaut-dabbing">
+      <img src="assets/astronaut2.png" alt="" class="astronaut-takeoff">
+    </div>
+
     <header>
       <nav>
         <p>Darryl The Coder</p>
@@ -434,6 +440,34 @@
         repeater();
       };
       repeat();
+
+      var splash = document.querySelector(".splash");
+      if(splash){
+        document.addEventListener('DOMContentLoaded',
+        function(event){
+          setTimeout(function(){
+            splash.style.display = 'none'
+          }, 3000);
+        });
+      }
+
+      var animate = document.querySelector('.astronaut-takeoff');
+      if(animate){
+        document.addEventListener('DOMContentLoaded',
+        function(event){
+          setTimeout(function(){
+            animate.classList.add('animation')
+          }, 400);
+        });
+      }
+
+      var splashText = document.querySelector('.splash-text');
+      if(splashText){
+          setTimeout(function(){
+            splashText.innerHTML = "Come in !"
+          }, 400);
+        }
+
     </script>
   </body>
 </html>
